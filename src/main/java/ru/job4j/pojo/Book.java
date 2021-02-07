@@ -4,6 +4,11 @@ public class Book {
     private String title;
     private int pages;
 
+    public Book (String title, int pages) {
+        this.title = title;
+        this.pages = pages;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -18,10 +23,5 @@ public class Book {
 
     public void setPages(int pages) {
         this.pages = pages;
-    }
-
-    public Book (String title, int pages) {
-    this.title = title;
-    this.pages = pages;
     }
 }
