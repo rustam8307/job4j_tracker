@@ -12,6 +12,7 @@ public class Tracker {
         items[size++] = item;
         return item;
     }
+
     public Item[] findAll() {
         return Arrays.copyOf(items, size);
     }
@@ -21,15 +22,14 @@ public class Tracker {
         Item[] neededName = new Item[size];
         for (int i = 0; i < size; i++) {
             Item name = items[i];
-            if(key.equals(name.getName())){
-                neededName[kuk] = name;
+            if (key.equals(name.getName())) {
+                neededName[kuk ] = name;
                 kuk++;
             }
         }
         return Arrays.copyOf(neededName, kuk);
 
     }
-
 
     public Item findById(int id) {
         Item rsl = null;
