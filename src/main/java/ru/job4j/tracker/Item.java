@@ -44,14 +44,6 @@ public class Item {
     }
 }
 
-class  StartUI1 {
 
-    public static void main(String[] args) {
-        Item item = new Item(LocalDateTime.now());
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
-        String currentDateTimeFormat = formatter.format(item.getDateAndTime());
-        System.out.println("После форматирования:  " + currentDateTimeFormat);
-    }
-}
 
